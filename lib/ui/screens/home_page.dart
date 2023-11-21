@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:test_app_moore_studio/ui/theme/app_colors.dart';
 import 'package:test_app_moore_studio/ui/widgets/address_shop_text.dart';
 import 'package:test_app_moore_studio/ui/widgets/bottom_nav_bar_widget.dart';
 import 'package:test_app_moore_studio/ui/widgets/custom_button_widget.dart';
@@ -25,9 +26,7 @@ class _HomePageState extends State<HomePage> {
       drawer: const Drawer(),
       appBar: AppBar(
         elevation: 0,
-        backgroundColor: const Color(
-          0xff0063A9,
-        ),
+        backgroundColor: AppColors.scaffoldBgColor ,
         actions: [
           IconButton(
             onPressed: () {},

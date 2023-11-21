@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:test_app_moore_studio/ui/theme/app_fonts.dart';
 
 class AddressShopsText extends StatelessWidget {
   const AddressShopsText({
@@ -13,22 +14,14 @@ class AddressShopsText extends StatelessWidget {
         children: [
           const Text(
             'Адреса магазинов',
-            style: TextStyle(
-              fontSize: 16,
-              fontWeight: FontWeight.w700,
-              color: Color(0xff000000),
-            ),
+            style: AppFonts.s16w700,
           ),
           const Spacer(),
           InkWell(
             onTap: () {},
             child: const Text(
               'Все',
-              style: TextStyle(
-                fontSize: 14,
-                fontWeight: FontWeight.w500,
-                color: Color(0xff0066B0),
-              ),
+              style: AppFonts.s14w500,
             ),
           ),
         ],
