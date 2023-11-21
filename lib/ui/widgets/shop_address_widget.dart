@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:test_app_moore_studio/ui/theme/app_fonts.dart';
 
 class ShopAddressWidget extends StatelessWidget {
   const ShopAddressWidget({
@@ -35,11 +36,7 @@ class ShopAddressWidget extends StatelessWidget {
                     children: [
                       const Text(
                         'Название магазина',
-                        style: TextStyle(
-                          fontSize: 14,
-                          fontWeight: FontWeight.w500,
-                          color: Color(0xff1F1F39),
-                        ),
+                        style: AppFonts.s14w500TextTopic,
                       ),
                       const SizedBox(width: 32),
                       IconButton(
@@ -64,11 +61,7 @@ class ShopAddressWidget extends StatelessWidget {
                       const SizedBox(width: 8),
                       const Text(
                         'ул. Турусбекова A167',
-                        style: TextStyle(
-                          fontSize: 12,
-                          fontWeight: FontWeight.w400,
-                          color: Color(0xff1F1F39),
-                        ),
+                        style: AppFonts.s12w400TextAddress,
                       ),
                     ],
                   ),
@@ -86,11 +79,7 @@ class ShopAddressWidget extends StatelessWidget {
                       const SizedBox(width: 8),
                       const Text(
                         '08:00 - 22:00',
-                        style: TextStyle(
-                          fontSize: 12,
-                          fontWeight: FontWeight.w500,
-                          color: Color(0xffB8B8D2),
-                        ),
+                        style: AppFonts.s12w500TextTime,
                       ),
                     ],
                   ),

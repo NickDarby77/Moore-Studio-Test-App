@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:test_app_moore_studio/ui/theme/app_fonts.dart';
 
 class BottomNavBarWidget extends StatelessWidget {
   const BottomNavBarWidget({
@@ -21,18 +22,8 @@ class BottomNavBarWidget extends StatelessWidget {
         type: BottomNavigationBarType.fixed,
         selectedItemColor: Colors.indigo,
         unselectedItemColor: const Color(0xff0063A9),
-        selectedLabelStyle: const TextStyle(
-          height: 1.5,
-          fontSize: 13,
-          fontWeight: FontWeight.w600,
-          color: Color(0xff0063A9),
-        ),
-        unselectedLabelStyle: const TextStyle(
-          height: 1.5,
-          fontSize: 13,
-          fontWeight: FontWeight.w400,
-          color: Color(0xff0063A9),
-        ),
+        selectedLabelStyle: AppFonts.selectedLabel,
+        unselectedLabelStyle: AppFonts.unselectedLabel,
         showSelectedLabels: true,
         showUnselectedLabels: true,
         currentIndex: currentIndex,
